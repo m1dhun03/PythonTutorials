@@ -1,0 +1,31 @@
+# Exercise 2 - Faulty Calculator
+# 45 * 3 = 555, 56+9 = 77, 56/6 = 4
+# Design a calculator which will correctly solve all the problems except
+# the following ones:
+# 45 * 3 = 555, 56+9 = 77, 56/6 = 4
+# Your program should take operator  and the two numbers as input from the user
+# and then return the result
+
+print("Types of Operators\n",
+      "+ for Addition\n",
+      "- for Substraction\n",
+      "* for Multiplication\n",
+      "/ for Division")
+      
+inp1=int(input("Enter First Number"))
+opr=input("Enter Operator")
+inp2=int(input("Enter Second Number"))
+if inp1==56 and inp2==9 and opr==("+"):
+      print(77)
+elif opr==("+"):
+      print(inp1+inp2)
+elif opr==("-"):
+      print(inp1-inp2)
+if inp1==45 and inp2==3 and opr==("*"):
+      print(555)
+elif opr==("*"):
+      print(inp1*inp2)
+if inp1==56 and inp2==6 and opr==("/"):
+      print(4)
+elif opr==("/"):
+      print(inp1/inp2)
