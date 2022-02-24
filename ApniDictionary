@@ -1,0 +1,7 @@
+print ("Dictionary_2022")
+d1 ={"set" : "put", "mutable":"can change ",
+     "immutabale": "cannot change" ,"abandon":"to give up" }
+print ("The required Meaning is :")
+n=input()
+print (d1[n])
+print("Thanks for using Dictionary")
