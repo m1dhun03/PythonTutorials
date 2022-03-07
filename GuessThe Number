@@ -1,0 +1,32 @@
+# Exercise - 3 = Solution
+''''
+You have to build a "Number Guessing Game," in which a winning number is set to some integer
+value. The Program should take input from the user, and if the entered number is less
+than the winning number, a message should display that the number is smaller and
+vice versa.
+'''
+
+# Instructions:
+# 1. You are free to use anything we've studied till now.
+# 2. The number of guesses should be limited, i.e (5 or 9).
+# 3. Print the number of guesses left.
+# 4. Print the number of guesses he took to win the game.
+# 5. “Game Over” message should display if the number of guesses becomes equal to 0.
+
+print("Number Guessing Game")
+nog=1
+n=12
+while nog<=9:
+    var1 = int(input("Guess the Number"))
+    if var1>12:
+        print("Guess Lower")
+    elif var1<12:
+        print("Guess Higher")
+    else:
+        print("You Guessed the right number")
+        print("Number of chance taken",nog)
+        break
+    print(9-nog ,"No of Chances left")
+    nog=nog+1
+if nog>7:
+    print("game over")
